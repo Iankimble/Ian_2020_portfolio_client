@@ -1,0 +1,26 @@
+import React, { Component } from "react";
+
+class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  handleChange = () => {};
+
+  submitForm = () => {};
+
+  contactForm = () => <div></div>;
+
+  submissionConfirmation = () => <div></div>;
+
+  render() {
+    return (
+      <div>
+        <h1>Let's connect</h1>
+      </div>
+    );
+  }
+}
+
+export default Contact;
