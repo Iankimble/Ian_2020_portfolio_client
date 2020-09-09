@@ -1,42 +1,123 @@
 import React from "react";
-
+import { Container, Jumbotron, Col, Row } from "react-bootstrap";
 const Greenprint = () => (
   <div>
-    <h1>Greenprint Case study</h1>
-    <div> App | github </div>
+    <Container fluid>
+      <Jumbotron>
+        <h1>Greenprint </h1>
+        <b>Financial literacy resource and practical calculator collection</b>
+        <Row>
+          <Col>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              lectus nulla at volutpat diam ut venenatis. In nulla posuere
+              sollicitudin aliquam ultrices sagittis. Consectetur purus ut
+              faucibus pulvinar elementum integer enim neque. Ut porttitor leo a
+              diam sollicitudin tempor. Ipsum consequat nisl vel pretium lectus
+              quam id leo in.
+            </p>
+            <div> App | github </div>
+          </Col>
+          <Col lg={6}>
+            <ul>
+              <h3>Table of Contents</h3>
+              <li>Background (Project summary)</li>
+              <li>Objectives and Goals (Deliverables and MVP)</li>
+              <li>Tools and Technology</li>
+              <li>Work flow</li>
+              <li>Design Guide</li>
+              <li>Challenges</li>
+              <li>Insights</li>
+              <li>
+                Connect/ Thanks for reading (linkedin, twitter, email, link to
+                contact form)
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Jumbotron>
+    </Container>
     <div>
-      <ul>
-        Table of Contents
-        <li>Project summary (Background)</li>
-        <li>Goal(MVP) and Objectives(deliverables)</li>
-        <li>Tools and Technology</li>
-        <li>Process(Work flow)</li>
-        <li>Design Guide</li>
-        <li>Wireframes</li>
-        <li>Mockups</li>
-        <li>Challenges</li>
-        <li>Insights</li>
-        <li>
-          Connect/ Thanks for reading (linkedin, twitter, email, link to contact
-          form)
-        </li>
-      </ul>
-      <h2>Background</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at
-        volutpat diam ut venenatis. In nulla posuere sollicitudin aliquam
-        ultrices sagittis. Consectetur purus ut faucibus pulvinar elementum
-        integer enim neque. Ut porttitor leo a diam sollicitudin tempor. Ipsum
-        consequat nisl vel pretium lectus quam id leo in. Nec sagittis aliquam
-        malesuada bibendum arcu vitae elementum. Eleifend mi in nulla posuere
-        sollicitudin. A condimentum vitae sapien pellentesque. Metus vulputate
-        eu scelerisque felis imperdiet proin fermentum. Suspendisse potenti
-        nullam ac tortor vitae purus faucibus ornare suspendisse. A cras semper
-        auctor neque vitae tempus quam pellentesque. Leo in vitae turpis massa
-        sed elementum tempus. Amet aliquam id diam maecenas ultricies mi eget
-        mauris pharetra.
-      </p>
+      <div style={{ textAlign: "center" }}>
+        <h2>Background</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum.
+          Eleifend mi in nulla posuere sollicitudin. A condimentum vitae sapien
+          pellentesque. Metus vulputate eu scelerisque felis imperdiet proin
+          fermentum. Suspendisse potenti nullam ac tortor vitae purus faucibus
+          ornare suspendisse. A cras semper auctor neque vitae tempus quam
+          pellentesque. Leo in vitae turpis massa sed elementum tempus. Amet
+          aliquam id diam maecenas ultricies mi eget mauris pharetra.
+        </p>
+        <h2>Objectives and Goals</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
+        </p>
+        <h2>Tools and Technology</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
+        </p>
+        <h2>Strategy and Workflow</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
+        </p>
+        <h2>Design Guide</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
+        </p>
+        <h2>Challenges</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
+        </p>
+        <h2>Insights</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis. In nulla posuere
+          sollicitudin aliquam ultrices sagittis. Consectetur purus ut faucibus
+          pulvinar elementum integer enim neque. Ut porttitor leo a diam
+          sollicitudin tempor. Ipsum consequat nisl vel pretium lectus quam id
+          leo in. Nec sagittis aliquam malesuada bibendum arcu vitae elementum
+        </p>
+        <h1>Thanks for reading!</h1>
+      </div>
     </div>
   </div>
 );
