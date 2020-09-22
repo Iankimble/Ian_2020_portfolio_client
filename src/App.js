@@ -7,7 +7,7 @@ const App = () => (
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
-    <footer style={{ textAlign: "center" }}>&copy; Ian kimble 2020</footer>
+    <footer style={{ textAlign: "center" }}>&copy; Ian Kimble 2020</footer>
   </div>
 );
 

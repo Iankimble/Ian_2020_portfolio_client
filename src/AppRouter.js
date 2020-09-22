@@ -24,7 +24,7 @@ const AppRouter = () => (
     <Route exact path="/about" component={About} />
 
     <Route exact path="/blog" component={Blog} />
-    <Route exact path="/Post" component={Post} />
+    <Route exact path="/blog/:postId" component={Post} />
 
     <Route exact path="/projects" component={Projects} />
     <Route exact path="/greenprint" component={Greenprint} />

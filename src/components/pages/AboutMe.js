@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron, Container, Col, Row, Image } from "react-bootstrap";
+
 const About = () => (
   <div>
     <Container fluid style={{ textAlign: "center" }}>
