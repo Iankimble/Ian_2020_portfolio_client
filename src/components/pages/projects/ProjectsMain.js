@@ -16,6 +16,7 @@ function ProjectMain() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
+    //Modal for  prompting user that an application is under construction/ still in development.
     <div>
       <Modal
         show={show}
@@ -32,11 +33,13 @@ function ProjectMain() {
           button.
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button
+            variant="secondary"
+            onClick={handleClose}
+            className={style.globalButton}
+            style={{ margin: "5px", width: "100px" }}
+          >
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Understood
           </Button>
         </Modal.Footer>
       </Modal>
@@ -46,13 +49,14 @@ function ProjectMain() {
           <h1>Projects</h1>
           <p></p>
         </Jumbotron>
+
         {/* Greenprint application*/}
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Card style={{ width: "25rem", margin: "10px" }}>
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>Greenprint</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 Financial literacy resource that includes a variety of finance
                 calculators and articles on related to financial topics.
               </Card.Text>
@@ -61,7 +65,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">App</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
               </a>
               <Link to="/greenprint">
                 {/* <Button variant="primary">Brief</Button> */}
@@ -71,7 +81,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Repo</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
               </a>
             </Card.Body>
           </Card>
@@ -81,7 +97,7 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>Testament</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 Digital prayer journal that also generates a passage from the
                 wisdom books to provide inspiration.
               </Card.Text>
@@ -90,7 +106,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">App</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
               </a>
               <Link to="/testament">
                 {/* <Button variant="primary">Brief</Button> */}
@@ -100,7 +122,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Repo</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
               </a>
             </Card.Body>
           </Card>
@@ -110,7 +138,7 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>Black Tech Philly</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 The home page of Black Tech Phily, a non profit organization
                 that connects black and brown developers with each and tech
                 oppurtunities.
@@ -120,7 +148,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">App</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
               </a>
               <Link to="/blacktechphilly">
                 {/* <Button variant="primary">Brief</Button> */}
@@ -130,7 +164,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Repo</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
               </a>
             </Card.Body>
           </Card>
@@ -140,7 +180,7 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>NBA Stats</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 NBA player stat generator for the current season.
               </Card.Text>
               <a
@@ -148,7 +188,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">App</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
               </a>
 
               <Link to="/civil411">
@@ -159,7 +205,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Repo</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
               </a>
             </Card.Body>
           </Card>
@@ -169,7 +221,7 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>21 Vice</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 Multiplayer blackjack game with a 80s action movie theme.
               </Card.Text>
               <a
@@ -177,7 +229,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">App</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
               </a>
               <Link to="/civil411">
                 {/* <Button variant="primary">Brief</Button> */}
@@ -187,7 +245,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Repo</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
               </a>
             </Card.Body>
           </Card>
@@ -197,7 +261,7 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>FST BRK Vol.1.5</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 Single player Basketball themed rock, paper, scissors game.
               </Card.Text>
               <a
@@ -205,7 +269,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">App</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
               </a>
 
               <Link to="/civil411">
@@ -216,7 +286,13 @@ function ProjectMain() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="primary">Repo</Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
               </a>
             </Card.Body>
           </Card>
@@ -226,19 +302,30 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>Civil 411</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 Political information resources that allows users to find their
                 voting centers and provides information on local and federal
                 representatives.
               </Card.Text>
 
-              <Button variant="primary" onClick={handleShow}>
+              <Button
+                variant="primary"
+                onClick={handleShow}
+                className={style.globalButton}
+                style={{ margin: "5px", width: "100px" }}
+              >
                 App
               </Button>
               <Link to="/civil411">
                 {/* <Button variant="primary">Brief</Button> */}
               </Link>
-              <Button variant="primary">Repo</Button>
+              <Button
+                variant="primary"
+                className={style.globalButton}
+                style={{ margin: "5px", width: "100px" }}
+              >
+                Repo
+              </Button>
             </Card.Body>
           </Card>
 
@@ -247,18 +334,29 @@ function ProjectMain() {
             <Card.Img variant="top" src="" />
             <Card.Body>
               <Card.Title>Track-N-Go</Card.Title>
-              <Card.Text>
+              <Card.Text className={style.cardBody}>
                 CRUD application that allows users to save, edit, and track and
                 remove orders based on their orders tracking number.
               </Card.Text>
 
-              <Button variant="primary" onClick={handleShow}>
+              <Button
+                variant="primary"
+                onClick={handleShow}
+                className={style.globalButton}
+                style={{ margin: "5px", width: "100px" }}
+              >
                 App
               </Button>
               <Link to="/civil411">
                 {/* <Button variant="primary">Brief</Button> */}
               </Link>
-              <Button variant="primary">Repo</Button>
+              <Button
+                variant="primary"
+                className={style.globalButton}
+                style={{ margin: "5px", width: "100px" }}
+              >
+                Repo
+              </Button>
             </Card.Body>
           </Card>
         </Row>

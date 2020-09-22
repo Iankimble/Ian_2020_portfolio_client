@@ -119,3 +119,8 @@
   background-image: linear-gradient(to bottom right, #f78c8f, #f6ac8b);
   text-decoration: none;
 }
+
+/* Card text bodies*/
+.cardBody {
+  height: 100px;
+}
