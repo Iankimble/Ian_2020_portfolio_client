@@ -15,6 +15,7 @@ import { getBlogContent } from "../../API";
 import { BounceLoader } from "react-spinners";
 import { css } from "@emotion/core";
 import { Fade } from "react-reveal";
+import moment from "moment";
 
 class Home extends Component {
   constructor() {
@@ -248,7 +249,13 @@ class Home extends Component {
                         style={{ width: "auto", height: "auto" }}
                       >
                         <h1>{this.state.blog[0].title}</h1>
-                        <h4>{this.state.blog[0].date}</h4>
+                        <b>
+                          <i>
+                            {moment(this.state.blog[0].date).format(
+                              "MMMM Do YYYY"
+                            )}
+                          </i>
+                        </b>
                         <p>{this.state.blog[0].blurb}</p>
                         <br />
                         <Link
