@@ -3,6 +3,7 @@ import { singlePost } from "../../../API";
 import { Container, Jumbotron } from "react-bootstrap";
 import reactStringReplace from "react-string-replace";
 import moment from "moment";
+import style from "../../styles/foundational_style.module.css";
 // import ReactPlayer from "react-player";
 
 class Post extends Component {
@@ -34,7 +35,7 @@ class Post extends Component {
       return (
         <div style={{ textAlign: "center" }}>
           <Container>
-            <Jumbotron>
+            <Jumbotron className={style.pageHeader}>
               <h1>{this.state.singlePost.title}</h1>
               <h4>{this.state.singlePost.subtitle}</h4>
               <i>

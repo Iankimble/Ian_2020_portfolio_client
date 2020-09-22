@@ -14,6 +14,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { getBlogContent } from "../../API";
 import { BounceLoader } from "react-spinners";
 import { css } from "@emotion/core";
+import { Fade } from "react-reveal";
 
 class Home extends Component {
   constructor() {
@@ -64,9 +65,18 @@ class Home extends Component {
           <Container fluid style={{ textAlign: "center" }}>
             <Row>
               <Col xs={12}>
-                <Jumbotron>
-                  <h1>Welcome</h1>
-                </Jumbotron>
+                <Fade top>
+                  <Jumbotron className={style.pageHeaderHome}>
+                    <Row>
+                      <Col lg={6} md={6}>
+                        Hi
+                      </Col>
+                      <Col lg={6} md={6}>
+                        <h1>Welcome</h1>
+                      </Col>
+                    </Row>
+                  </Jumbotron>
+                </Fade>
               </Col>
             </Row>
             <Row>
@@ -80,24 +90,27 @@ class Home extends Component {
                       href="https://www.linkedin.com/in/iank6/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={style.subNavLinks}
                     >
                       LinkedIn
                     </a>
                   </Nav.Item>
-                  <Nav.Item className={style.subNavLinks}>
+                  <Nav.Item>
                     <a
                       href="https://github.com/Iankimble"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={style.subNavLinks}
                     >
                       Github
                     </a>
                   </Nav.Item>
-                  <Nav.Item className={style.subNavLinks}>
+                  <Nav.Item>
                     <a
                       href="https://twitter.com/KimbleDev"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={style.subNavLinks}
                     >
                       Twitter
                     </a>
@@ -105,7 +118,7 @@ class Home extends Component {
                 </Nav>
               </Col>
             </Row>
-
+            <hr />
             <Row style={{ background: "", margin: "5px" }}>
               <Col xs={12} md={6}>
                 <h1>Latests</h1>
@@ -113,7 +126,7 @@ class Home extends Component {
                   <BounceLoader
                     css={override}
                     size={150}
-                    color={"#123abc"}
+                    color={"#319592"}
                     loading={this.state.loading}
                   />
                 </div>
@@ -121,20 +134,22 @@ class Home extends Component {
               </Col>
 
               <Col xs={12} md={6}>
-                <h1>Twitter</h1>
-                <div>
-                  <div className="centerContent">
-                    <div className="selfCenter spaceBetween standardWidth">
-                      <TwitterTimelineEmbed
-                        sourceType="profile"
-                        screenName="KimbleDev"
-                        theme="light"
-                        options={{ height: 400 }}
-                        noScrollbar
-                      />
+                <Fade right>
+                  <h1>Twitter</h1>
+                  <div>
+                    <div className="centerContent">
+                      <div className="selfCenter spaceBetween standardWidth">
+                        <TwitterTimelineEmbed
+                          sourceType="profile"
+                          screenName="KimbleDev"
+                          theme="light"
+                          options={{ height: 300 }}
+                          noScrollbar
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Fade>
               </Col>
             </Row>
           </Container>
@@ -147,9 +162,18 @@ class Home extends Component {
           <Container fluid style={{ textAlign: "center" }}>
             <Row>
               <Col xs={12}>
-                <Jumbotron>
-                  <h1>Welcome</h1>
-                </Jumbotron>
+                <Fade top>
+                  <Jumbotron className={style.pageHeaderHome}>
+                    <Row>
+                      <Col lg={6} md={6}>
+                        Hi
+                      </Col>
+                      <Col lg={6} md={6}>
+                        <h1>Welcome</h1>
+                      </Col>
+                    </Row>
+                  </Jumbotron>
+                </Fade>
               </Col>
             </Row>
             <Row>
@@ -158,29 +182,32 @@ class Home extends Component {
                   className="justify-content-center"
                   style={{ margin: "25px" }}
                 >
-                  <Nav.Item className={style.subNavLinks}>
+                  <Nav.Item>
                     <a
                       href="https://www.linkedin.com/in/iank6/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={style.subNavLinks}
                     >
                       LinkedIn
                     </a>
                   </Nav.Item>
-                  <Nav.Item className={style.subNavLinks}>
+                  <Nav.Item>
                     <a
                       href="https://github.com/Iankimble"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={style.subNavLinks}
                     >
                       Github
                     </a>
                   </Nav.Item>
-                  <Nav.Item className={style.subNavLinks}>
+                  <Nav.Item>
                     <a
                       href="https://twitter.com/KimbleDev"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={style.subNavLinks}
                     >
                       Twitter
                     </a>
@@ -188,69 +215,79 @@ class Home extends Component {
                 </Nav>
               </Col>
             </Row>
+            <hr />
+
             <Row style={{ background: "", margin: "5px" }}>
               <Col xs={12} md={6}>
                 <h1>Latests</h1>
-
-                <Card
-                  style={{
-                    margin: "10px",
-                    background: " ",
-                    height: 350,
-                  }}
-                >
-                  <Row style={{ margin: "5px", textAlign: "center" }}>
-                    <Col xs={12} sm="auto" md={12} lg={6} xl={6} style={{}}>
-                      <img
-                        src=""
-                        alt=""
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          background: " ",
-                        }}
-                      />
-                    </Col>
-                    <Col
-                      xs={12}
-                      md={12}
-                      lg={6}
-                      xl={6}
-                      style={{ width: "auto", height: "auto" }}
-                    >
-                      <h1>{this.state.blog[0].title}</h1>
-                      <h4>{this.state.blog[0].date}</h4>
-                      <p>{this.state.blog[0].blurb}</p>
-                      <br />
-                      <Link to={`/blog/${this.state.blog[0].id}`}>
-                        <Button size="lg" block>
-                          Continue Reading
-                          <br />
-                        </Button>
-                      </Link>
-                    </Col>
-                  </Row>
-                </Card>
-                <Link to="/blog">
-                  <Button size="lg" block>
-                    Continue to Blog
-                  </Button>
-                </Link>
+                <Fade left>
+                  <Card
+                    style={{
+                      margin: "10px",
+                      background: " ",
+                      height: "auto",
+                    }}
+                  >
+                    <Row style={{ margin: "5px", textAlign: "center" }}>
+                      <Col xs={12} sm="auto" md={12} lg={6} xl={6} style={{}}>
+                        <img
+                          src=""
+                          alt=""
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            background: " ",
+                          }}
+                        />
+                      </Col>
+                      <Col
+                        xs={12}
+                        md={12}
+                        lg={6}
+                        xl={6}
+                        style={{ width: "auto", height: "auto" }}
+                      >
+                        <h1>{this.state.blog[0].title}</h1>
+                        <h4>{this.state.blog[0].date}</h4>
+                        <p>{this.state.blog[0].blurb}</p>
+                        <br />
+                        <Link
+                          to={`/blog/${this.state.blog[0].id}`}
+                          className={style.btnText}
+                        >
+                          <Button size="sm" className={style.globalButton}>
+                            Continue Reading
+                          </Button>
+                        </Link>
+                      </Col>
+                    </Row>
+                  </Card>
+                </Fade>
+                <Fade rigt>
+                  <Link to="/blog" className={style.btnText}>
+                    <Button size="lg" block className={style.globalButton}>
+                      Continue to Blog
+                    </Button>
+                  </Link>
+                </Fade>
               </Col>
-              <Col xs={12} md={6}>
-                <h1>Twitter</h1>
 
-                <div className="centerContent">
-                  <div className="selfCenter spaceBetween standardWidth">
-                    <TwitterTimelineEmbed
-                      sourceType="profile"
-                      screenName="KimbleDev"
-                      theme="light"
-                      options={{ height: 400 }}
-                      noScrollbar
-                    />
+              <Col xs={12} md={6}>
+                <Fade right>
+                  <h1>Twitter</h1>
+
+                  <div className="centerContent">
+                    <div className="selfCenter spaceBetween standardWidth">
+                      <TwitterTimelineEmbed
+                        sourceType="profile"
+                        screenName="KimbleDev"
+                        theme="light"
+                        options={{ height: 300 }}
+                        noScrollbar
+                      />
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </Col>
             </Row>
           </Container>

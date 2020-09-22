@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { getBlogContent } from "../../../API";
 import { BounceLoader } from "react-spinners";
 import { css } from "@emotion/core";
+import style from "../../styles/foundational_style.module.css";
+import { Fade } from "react-reveal";
+import moment from "moment";
 
 export class BlogData extends Component {
   constructor() {
@@ -38,7 +41,7 @@ export class BlogData extends Component {
         this.setState({
           error: true,
         });
-      } else console.log(data);
+      }
       this.setState({
         blog: data.reverse(),
         isLoading: false,
@@ -56,46 +59,50 @@ export class BlogData extends Component {
     let dataList = this.state.blog.slice(0, this.state.perPage).map((post) => {
       return (
         <div key={post.id}>
-          <Container>
-            <Row style={{ margin: "50px" }}>
-              <Card style={{ margin: "10px", background: "lightyellow" }}>
-                <Row style={{ margin: "5px", textAlign: "center" }}>
-                  <Col xs={12} sm="auto" md={12} lg={6} xl={6} style={{}}>
-                    <img
-                      src=""
-                      alt=""
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        background: "pink",
-                      }}
-                    />
-                  </Col>
-                  <Col
-                    xs={12}
-                    md={12}
-                    lg={6}
-                    xl={6}
-                    style={{ width: "auto", height: "auto" }}
-                    key={post.id}
-                  >
-                    <h1>{post.title}</h1>
-                    <p>
-                      {post.blurb}
-                      {post.date}
+          <Fade top>
+            <Container>
+              <Row style={{ margin: "0px" }}>
+                <Card style={{ margin: "10px", background: "" }}>
+                  <Row style={{ margin: "5px", textAlign: "center" }}>
+                    <Col xs={12} sm="auto" md={12} lg={6} xl={6} style={{}}>
+                      <img
+                        src=""
+                        alt="Blog"
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          background: "",
+                        }}
+                      />
+                    </Col>
+                    <Col
+                      xs={12}
+                      md={12}
+                      lg={6}
+                      xl={6}
+                      style={{ width: "auto", height: "auto" }}
+                      key={post.id}
+                    >
+                      <h1>{post.title}</h1>
+                      <b>{moment(post.date).format("MMMM Do YYYY")}</b>
                       <br />
-                      <Link to={`/blog/${post.id}`}>
-                        <Button>
-                          Read More
-                          <br />
-                        </Button>
-                      </Link>
-                    </p>
-                  </Col>
-                </Row>
-              </Card>
-            </Row>
-          </Container>
+                      <p>
+                        {post.blurb}
+                        <br />
+                        <br />
+                        <Link to={`/blog/${post.id}`}>
+                          <Button className={style.globalButton}>
+                            Read More
+                            <br />
+                          </Button>
+                        </Link>
+                      </p>
+                    </Col>
+                  </Row>
+                </Card>
+              </Row>
+            </Container>
+          </Fade>
         </div>
       );
     });
@@ -106,8 +113,8 @@ export class BlogData extends Component {
           <div className="sweet-loading">
             <BounceLoader
               css={override}
-              size={150}
-              color={"#123abc"}
+              size={250}
+              color={"#319592"}
               loading={this.state.loading}
             />
           </div>
@@ -120,7 +127,12 @@ export class BlogData extends Component {
           {dataList}
           <Row style={{ margin: "50px" }}>
             <Col style={{ textAlign: "center" }}>
-              <Button size="lg" onClick={this.loadMore}>
+              <Button
+                size="lg"
+                block
+                onClick={this.loadMore}
+                className={style.globalButton}
+              >
                 Load More
               </Button>
             </Col>
