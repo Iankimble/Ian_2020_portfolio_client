@@ -102,7 +102,7 @@ function ProjectMain() {
                 wisdom books to provide inspiration.
               </Card.Text>
               <a
-                href="https://testament1.herokuapp.com/"
+                href="https://testament-server.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -118,7 +118,7 @@ function ProjectMain() {
                 {/* <Button variant="primary">Brief</Button> */}
               </Link>
               <a
-                href="https://github.com/Iankimble/h_tmt"
+                href="https://github.com/Iankimble/Testament_2019_server"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -278,7 +278,7 @@ function ProjectMain() {
                 </Button>
               </a>
 
-              <Link to="/civil411">
+              <Link to="/">
                 {/* <Button variant="primary">Brief</Button> */}
               </Link>
               <a
@@ -307,25 +307,37 @@ function ProjectMain() {
                 voting centers and provides information on local and federal
                 representatives.
               </Card.Text>
-
-              <Button
-                variant="primary"
-                onClick={handleShow}
-                className={style.globalButton}
-                style={{ margin: "5px", width: "100px" }}
+              <a
+                href="https://romantic-swirles-e7e20c.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                App
-              </Button>
+                <Button
+                  variant="primary"
+                  // onClick={handleShow}
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
+              </a>
               <Link to="/civil411">
                 {/* <Button variant="primary">Brief</Button> */}
               </Link>
-              <Button
-                variant="primary"
-                className={style.globalButton}
-                style={{ margin: "5px", width: "100px" }}
+
+              <a
+                href="https://github.com/Iankimble/civil_411_client"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Repo
-              </Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
+              </a>
             </Card.Body>
           </Card>
 
@@ -350,13 +362,20 @@ function ProjectMain() {
               <Link to="/civil411">
                 {/* <Button variant="primary">Brief</Button> */}
               </Link>
-              <Button
-                variant="primary"
-                className={style.globalButton}
-                style={{ margin: "5px", width: "100px" }}
+
+              <a
+                href="https://github.com/Iankimble/Tracking_n_go_client_2020"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Repo
-              </Button>
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Row>

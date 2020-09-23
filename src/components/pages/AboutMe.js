@@ -2,6 +2,7 @@ import React from "react";
 import { Jumbotron, Container, Col, Row, Image } from "react-bootstrap";
 import style from "../styles/foundational_style.module.css";
 import { Fade } from "react-reveal";
+import Ian from "../styles/IanKimblePhotogreen.png";
 
 const About = () => (
   <div>
@@ -18,21 +19,19 @@ const About = () => (
         <Col lg={6}>
           <Fade left>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Dedicated and ambitious MERN stack web developer and designer with
+              a culmination of over 2 years of experience tutoring, teaching,
+              providing professional guidance and consultation, and contributing
+              code to start up companies and organizations. Currently seeking to
+              contribute my unique experiences and skill sets into a full time
+              web developer role.
             </p>
-            <p>skills</p>
           </Fade>
         </Col>
         <Col lg={6} style={{ background: "" }}>
           <Fade right>
-            <h1>Ian</h1>
-            <Image src="" alt=""></Image>
+            {/* <h1>Ian</h1> */}
+            <img src={Ian} alt="Ian Kimble" className={style.ianImg} />
           </Fade>
         </Col>
       </Row>

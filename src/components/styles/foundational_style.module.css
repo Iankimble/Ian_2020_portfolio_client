@@ -4,9 +4,11 @@
 }
 
 .pageHeaderHome {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   margin-top: 10px;
   height: 50vh;
+  background-image: url("./IanKimblePhotogreen.png");
+  background-size: cover;
 }
 
 /*Nav bars and Links*/
@@ -123,4 +125,25 @@
 /* Card text bodies*/
 .cardBody {
   height: 100px;
+}
+
+@media (min-width: 320px) {
+  .ianImg {
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (min-width: 601px) {
+  .ianImg {
+    height: 350px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .ianImg {
+    height: 400px;
+    width: auto;
+  }
 }

@@ -166,9 +166,7 @@ class Home extends Component {
                 <Fade top>
                   <Jumbotron className={style.pageHeaderHome}>
                     <Row>
-                      <Col lg={6} md={6}>
-                        Hi
-                      </Col>
+                      <Col lg={6} md={6}></Col>
                       <Col lg={6} md={6}>
                         <h1>Welcome</h1>
                       </Col>
