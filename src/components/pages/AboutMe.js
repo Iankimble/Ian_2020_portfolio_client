@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container, Col, Row, Image } from "react-bootstrap";
+import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import style from "../styles/foundational_style.module.css";
 import { Fade } from "react-reveal";
 import Ian from "../styles/IanKimblePhotogreen.png";
