@@ -4,7 +4,7 @@ import { Container, Jumbotron } from "react-bootstrap";
 import reactStringReplace from "react-string-replace";
 import moment from "moment";
 import style from "../../styles/foundational_style.module.css";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 class Post extends Component {
   state = {
