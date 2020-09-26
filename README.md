@@ -1,5 +1,7 @@
 # Ian Kimble's Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f3e4053-220b-4a45-92bf-2729b033d014/deploy-status)](https://app.netlify.com/sites/happy-neumann-37e4df/deploys)
+
 ## Table of Contents
 
 1. Project Summary
