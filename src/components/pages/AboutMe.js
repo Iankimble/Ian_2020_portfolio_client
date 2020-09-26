@@ -100,7 +100,7 @@ const About = () => (
               <Card>
                 <DiBootstrap
                   size="6em"
-                  color="#3596D0"
+                  color="#7952B3"
                   style={{
                     display: "block",
                     marginLeft: "auto",
@@ -210,7 +210,7 @@ const About = () => (
               <Card>
                 <SiStrapi
                   size="6em"
-                  color="5ED4F4"
+                  color="#4C25D9"
                   style={{
                     display: "block",
                     marginLeft: "auto",
@@ -228,7 +228,7 @@ const About = () => (
               <Card>
                 <SiGraphql
                   size="6em"
-                  color="5ED4F4"
+                  color="#DE33A6"
                   style={{
                     display: "block",
                     marginLeft: "auto",
@@ -246,7 +246,7 @@ const About = () => (
               <Card>
                 <DiGithubAlt
                   size="6em"
-                  color="5ED4F4"
+                  color="#000000"
                   style={{
                     display: "block",
                     marginLeft: "auto",
@@ -264,7 +264,7 @@ const About = () => (
               <Card>
                 <DiWordpress
                   size="6em"
-                  color="207297"
+                  color="#207195"
                   style={{
                     display: "block",
                     marginLeft: "auto",
