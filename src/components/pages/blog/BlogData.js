@@ -66,7 +66,7 @@ export class BlogData extends Component {
                   <Row style={{ margin: "5px", textAlign: "center" }}>
                     <Col xs={12} sm="auto" md={12} lg={6} xl={6} style={{}}>
                       <img
-                        src=""
+                        src={post.imgurl}
                         alt="Blog"
                         style={{
                           height: "100%",

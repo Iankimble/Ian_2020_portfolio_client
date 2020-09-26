@@ -230,7 +230,7 @@ class Home extends Component {
                     <Row style={{ margin: "5px", textAlign: "center" }}>
                       <Col xs={12} sm="auto" md={12} lg={6} xl={6} style={{}}>
                         <img
-                          src=""
+                          src={this.state.blog[0].imgurl}
                           alt=""
                           style={{
                             height: "100%",
