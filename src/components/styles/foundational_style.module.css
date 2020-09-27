@@ -127,10 +127,18 @@
   height: 100px;
 }
 
+/*Post Image*/
+
 @media (min-width: 320px) {
   .ianImg {
     height: 200px;
     width: auto;
+  }
+
+  .postImg {
+    height: 170px;
+    width: auto;
+    margin: 20px;
   }
 }
 
@@ -139,11 +147,22 @@
     height: 350px;
     width: auto;
   }
+
+  .postImg {
+    height: 400px;
+    width: auto;
+    margin: 20px;
+  }
 }
 
 @media (min-width: 1025px) {
   .ianImg {
     height: 400px;
+    width: auto;
+  }
+
+  .postImg {
+    height: 500px;
     width: auto;
   }
 }

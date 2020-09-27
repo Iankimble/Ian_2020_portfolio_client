@@ -4,6 +4,7 @@ import { Container, Jumbotron } from "react-bootstrap";
 import reactStringReplace from "react-string-replace";
 import moment from "moment";
 import style from "../../styles/foundational_style.module.css";
+
 // import ReactPlayer from "react-player";
 
 class Post extends Component {
@@ -24,8 +25,6 @@ class Post extends Component {
           postId: postId,
           singlePost: data,
         });
-        console.log(data);
-        console.log(data.imgurl);
       }
     });
   };
@@ -46,7 +45,12 @@ class Post extends Component {
                 )}
               </i>
             </Jumbotron>
-            <img src={this.state.singlePost.imgurl} alt="blog" />
+            <img
+              src={this.state.singlePost.imgurl}
+              alt="blog"
+              className={style.postImg}
+            />
+            <br />
             <p>
               {reactStringReplace(text, /(\^)/g, (match, i) => (
                 <p key={i}>{match}</p>
