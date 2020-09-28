@@ -218,7 +218,7 @@ class Home extends Component {
 
             <Row style={{ background: "", margin: "5px" }}>
               <Col xs={12} md={6}>
-                <h1>Latests</h1>
+                <h1>Latest</h1>
                 <Fade left>
                   <Card
                     style={{
