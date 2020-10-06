@@ -175,6 +175,50 @@ function ProjectMain() {
             </Card.Body>
           </Card>
 
+          {/* Civil 411 application*/}
+          <Card style={{ width: "25rem", margin: "10px" }}>
+            <Card.Img variant="top" src="" />
+            <Card.Body>
+              <Card.Title>Civil 411</Card.Title>
+              <Card.Text className={style.cardBody}>
+                Political information resources that allows users to find their
+                voting centers and provides information on local and federal
+                representatives.
+              </Card.Text>
+              <a
+                href="https://romantic-swirles-e7e20c.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="primary"
+                  // onClick={handleShow}
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  App
+                </Button>
+              </a>
+              <Link to="/civil411">
+                {/* <Button variant="primary">Brief</Button> */}
+              </Link>
+
+              <a
+                href="https://github.com/Iankimble/civil_411_client"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="primary"
+                  className={style.globalButton}
+                  style={{ margin: "5px", width: "100px" }}
+                >
+                  Repo
+                </Button>
+              </a>
+            </Card.Body>
+          </Card>
+
           {/*NBA Stat*/}
           <Card style={{ width: "25rem", margin: "10px" }}>
             <Card.Img variant="top" src="" />
@@ -283,50 +327,6 @@ function ProjectMain() {
               </Link>
               <a
                 href="https://github.com/Iankimble/fstbrk-1.5"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="primary"
-                  className={style.globalButton}
-                  style={{ margin: "5px", width: "100px" }}
-                >
-                  Repo
-                </Button>
-              </a>
-            </Card.Body>
-          </Card>
-
-          {/* Civil 411 application*/}
-          <Card style={{ width: "25rem", margin: "10px" }}>
-            <Card.Img variant="top" src="" />
-            <Card.Body>
-              <Card.Title>Civil 411</Card.Title>
-              <Card.Text className={style.cardBody}>
-                Political information resources that allows users to find their
-                voting centers and provides information on local and federal
-                representatives.
-              </Card.Text>
-              <a
-                href="https://romantic-swirles-e7e20c.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="primary"
-                  // onClick={handleShow}
-                  className={style.globalButton}
-                  style={{ margin: "5px", width: "100px" }}
-                >
-                  App
-                </Button>
-              </a>
-              <Link to="/civil411">
-                {/* <Button variant="primary">Brief</Button> */}
-              </Link>
-
-              <a
-                href="https://github.com/Iankimble/civil_411_client"
                 target="_blank"
                 rel="noopener noreferrer"
               >
