@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import style from "../styles/foundational_style.module.css";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+// import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { getBlogContent } from "../../API";
 import { BounceLoader } from "react-spinners";
 import { css } from "@emotion/core";
@@ -134,7 +134,7 @@ class Home extends Component {
                 {this.loadingData()}
               </Col>
 
-              <Col xs={12} md={6}>
+              {/* <Col xs={12} md={6}>
                 <Fade right>
                   <h1>Twitter</h1>
                   <div>
@@ -151,7 +151,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </Fade>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
@@ -276,8 +276,7 @@ class Home extends Component {
                   </Link>
                 </Fade>
               </Col>
-
-              <Col xs={12} md={6}>
+              {/* <Col xs={12} md={6}>
                 <Fade right>
                   <h1>Twitter</h1>
 
@@ -293,7 +292,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </Fade>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
