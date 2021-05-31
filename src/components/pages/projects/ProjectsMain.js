@@ -7,7 +7,7 @@ function ProjectMain() {
 	const [ show, setShow ] = useState(false);
 
 	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
+	// const handleShow = () => setShow(true);
 	return (
 		//Modal for  prompting user that an application is under construction/ still in development.
 		<div>
